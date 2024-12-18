@@ -19,6 +19,10 @@ const reviewSchema = new Schema<TReview>({
     type: String,
     required: true,
   },
-});
+},
+{
+  timestamps:true,
+}
+);
 
 export const Review = model<TReview>("Review", reviewSchema);
